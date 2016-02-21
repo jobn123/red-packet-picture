@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#img {
+  display: block;
+  margin: 0 auto;
+  filter: blur(20px);/*滤镜*/
+  -webkit-filter: blur(20px);
+     -moz-filter: blur(20px);
+      -ms-filter: blur(20px);
+       -o-filter: blur(20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  width: 80px;
+  height: 30px;
+  text-align:center;
+  border: 1px solid;
+  line-height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+}
+
+.reset {
+  background-color: #058;
+  left: 50px;
+}
+.reset:hover {
+  background-color: #047;
+}
+.show {
+  background-color: #085;
+  right: 50px;
+}
+.show:hover {
+  background-color: #074;
+}
